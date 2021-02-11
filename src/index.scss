@@ -1,15 +1,17 @@
-@import '../node_modules/reset-css/reset.css';
+@import "../node_modules/reset-css/reset.css";
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 .name {
@@ -48,4 +50,30 @@ code {
     color: unset;
     font-size: 1.5rem;
   }
+}
+
+.PokemonList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Filters {
+  display: flex;
+
+  .filter {
+    margin: 0 0.5rem;
+
+    &.active {
+      font-weight: bold;
+    }
+  }
+}
+
+.trained {
+  display: flex;
+}
+
+.Hook {
+  font-size: 3rem;
+  text-align: center;
 }

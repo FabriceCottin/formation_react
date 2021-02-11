@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import App from './classes/App';
+
 import './index.scss';
 
-const pokemon = <div>Pikachu</div>;
-
-ReactDOM.render(pokemon, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
